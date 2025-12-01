@@ -10,7 +10,7 @@
             console.log(`Afficher le premier element : ${table[0]} \n Afficher le  dernier élément.: ${table[4]}`);
             table[0] = "m";
             console.log(`Remplacer  le premier element par : \n${table[0]}`);
-      console.log(" Partie 2 : Méthodes simples (push, pop, shift, unshift) ****************/");
+      console.log(" Partie 2 : Methodes simples (push, pop, shift, unshift) ");
       table.push("m");
       console.log(`tableau apres l'ajout d'element a la fin: \n  ${table}`);
       table.unshift("m");
