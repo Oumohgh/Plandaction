@@ -68,15 +68,13 @@
             nom:"m"
             },
             {id:2,
-            nom:"ali"
+            nom:"amine"
             },
             {id:3,
-            nom:"walid"
+            nom:"oussama"
             }
       ]
-      // for(let joueur of joueurs){
-      //       joueur.find()
-      // }
+    
       console.log(joueurs.find(joueur => joueur.id == 3))
       
       console.log("5 : Filtrer un tableau");
@@ -89,20 +87,20 @@
             post: "it"
             },
             {moyene: 20,
-            nom:"ali",
+            nom:"mo",
             post: "marketing"
             },
             {moyene: 16,
-            nom:"walid",
+            nom:"oussama",
             post: "netoyagge"
             },
             {moyene: 16,
-            nom:"walid",
-            post: "aetoyagge"
+            nom:"mohammed",
+            post: "netoyage"
             }
       ]
       console.log(etudiants.filter(etd => etd.moyene >= 12));
-      console.log(etudiants.filter(etd => etd.post === "netoyagge"));
+      console.log(etudiants.filter(etd => etd.post === "netoyage"));
 
       console.log(" 6 : Transformer un tableau ");
       console.log(nbr);
@@ -117,8 +115,8 @@
 
       console.log(" Trier et ordonner un tableau");
       console.log(nbr.sort());
-      console.log(nbr.sort((a,b) => a-b)); //croissant
-      console.log(nbr.sort((a,b) => b-a)); //decroissant
+      console.log(nbr.sort((a,b) => a-b)); 
+      console.log(nbr.sort((a,b) => b-a)); 
       function sortArray(x, y){
             if(x.post < y.post)
                   return -1;
@@ -128,13 +126,10 @@
       }
       var s = etudiants.sort(sortArray);
       console.log(s);
-      // console.log(etudiants.sort((a,b) => a-b));
+      
       console.log("/Mise à jour et suppression dans un tableau d'objets ");
       /*
-      Exercices
-      Modifier un étudiant dans une liste par son id.
-      Supprimer un joueur avec filter().
-      Incrémenter l’âge de chaque personne.
+     Exercices Modifier un étudiant dans une liste par son id. Supprimer un joueur avec filter(). Incrémenter l’âge de chaque personne.
       */
       nbr[0] = 1200;
       console.log(nbr);
