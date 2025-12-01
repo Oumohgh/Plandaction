@@ -49,9 +49,7 @@ function renderCardProduit(TableauProduit){
             })
       document.querySelectorAll(".updateBtn").forEach(btn =>{
             btn.addEventListener("click", ()=>{
-                  // document.forms["updateProduit"].classList.remove("d-none");
-                  // document.forms["updateProduit"].classList.add("d-block");
-                  // document.forms["AjoutProduit"].classList.add("d-none");
+                 
                   let idProduitBtnToUpdate= btn.getAttribute("data-id");
                   updateProductById(TableauProduit, idProduitBtnToUpdate);
             })
